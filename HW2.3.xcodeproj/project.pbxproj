@@ -13,6 +13,7 @@
 		B6C4A23827276BB000F9E75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C4A23627276BB000F9E75A /* Main.storyboard */; };
 		B6C4A23A27276BB700F9E75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C4A23927276BB700F9E75A /* Assets.xcassets */; };
 		B6C4A23D27276BB700F9E75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C4A23B27276BB700F9E75A /* LaunchScreen.storyboard */; };
+		B6C4A24527288C7900F9E75A /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C4A24427288C7900F9E75A /* LogOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B6C4A23927276BB700F9E75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C4A23C27276BB700F9E75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6C4A23E27276BB700F9E75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C4A24427288C7900F9E75A /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				B6C4A23227276BB000F9E75A /* SceneDelegate.swift */,
 				B6C4A23427276BB000F9E75A /* ViewController.swift */,
 				B6C4A23627276BB000F9E75A /* Main.storyboard */,
+				B6C4A24427288C7900F9E75A /* LogOutViewController.swift */,
 				B6C4A23927276BB700F9E75A /* Assets.xcassets */,
 				B6C4A23B27276BB700F9E75A /* LaunchScreen.storyboard */,
 				B6C4A23E27276BB700F9E75A /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				B6C4A23527276BB000F9E75A /* ViewController.swift in Sources */,
 				B6C4A23127276BB000F9E75A /* AppDelegate.swift in Sources */,
+				B6C4A24527288C7900F9E75A /* LogOutViewController.swift in Sources */,
 				B6C4A23327276BB000F9E75A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

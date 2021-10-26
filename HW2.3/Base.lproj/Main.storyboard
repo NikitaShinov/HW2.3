@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J0L-hf-QlL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="hFo-g4-1u1">
-                                <rect key="frame" x="88" y="163" width="252" height="110"/>
+                                <rect key="frame" x="88" y="119" width="252" height="110"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-75-ZCQ">
                                         <rect key="frame" x="0.0" y="0.0" width="252" height="34"/>
@@ -32,16 +32,15 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdG-lg-esq">
-                                <rect key="frame" x="182.33333333333334" y="342" width="63.333333333333343" height="31"/>
+                                <rect key="frame" x="182.33333333333334" y="298" width="63.333333333333343" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log in"/>
                                 <connections>
                                     <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vC3-bL-qcI"/>
-                                    <segue destination="qmH-U5-Cfz" kind="show" id="mgS-1Y-tko"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="ie2-Xr-n89">
-                                <rect key="frame" x="55" y="403" width="318" height="26"/>
+                                <rect key="frame" x="55" y="359" width="318" height="26"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcX-2Z-Xde">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="26"/>
@@ -82,37 +81,41 @@
                     <connections>
                         <outlet property="loginTF" destination="Kme-75-ZCQ" id="uZh-v5-FlI"/>
                         <outlet property="passwordTF" destination="J4O-GO-dcy" id="YKH-Kb-lb8"/>
+                        <segue destination="qmH-U5-Cfz" kind="show" identifier="logInSegue" id="cft-lp-V5D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876.1682242990654" y="54.427645788336939"/>
         </scene>
-        <!--View Controller-->
+        <!--Log Out View Controller-->
         <scene sceneID="ahV-dx-u72">
             <objects>
-                <viewController id="qmH-U5-Cfz" sceneMemberID="viewController">
+                <viewController id="qmH-U5-Cfz" customClass="LogOutViewController" customModule="HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MgB-cL-u6V">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMo-Ls-2lN">
-                                <rect key="frame" x="95" y="143" width="238" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMo-Ls-2lN">
+                                <rect key="frame" x="95" y="55" width="238" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="cCe-L6-hw9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-aj-Jzq">
-                                <rect key="frame" x="177.66666666666666" y="419" width="73" height="31"/>
+                                <rect key="frame" x="177.66666666666666" y="331" width="73" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log out"/>
+                                <connections>
+                                    <segue destination="up1-XY-dTQ" kind="unwind" unwindAction="unwindSegueToMainVCWithSegue:" id="n6K-sG-nqo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LIb-R0-OOs"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="o0x-aj-Jzq" firstAttribute="centerX" secondItem="LIb-R0-OOs" secondAttribute="centerX" id="LgU-DQ-2Nc"/>
                             <constraint firstItem="BMo-Ls-2lN" firstAttribute="leading" secondItem="LIb-R0-OOs" secondAttribute="leading" constant="95" id="ccp-Dt-C52"/>
@@ -122,36 +125,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yJE-Nj-FeM"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="BMo-Ls-2lN" id="XEy-1n-WQJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcX-Js-pQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="up1-XY-dTQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1792.9906542056074" y="53.779697624190071"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fuh-hr-xlV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J0L-hf-QlL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UP9-4g-IAz">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NNw-bK-DFY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ui5-Hf-R8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-23.831775700934578" y="54.427645788336939"/>
-        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
