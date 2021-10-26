@@ -33,7 +33,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwindSegueToMainVC (segue: UIStoryboardSegue) {
-        
+        passwordTF.text = ""
+        loginTF.text = ""
     }
     @IBAction func forgotPasswordButtonPressed() {
         
