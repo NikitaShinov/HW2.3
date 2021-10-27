@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loginTF.delegate = self
+        passwordTF.delegate = self
     }
 
     @IBAction func logInPressed(_ sender: UIButton) {
@@ -64,3 +65,16 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn (_ textfield: UITextField) -> Bool {
+        switch textfield {
+        case loginTF:
+            passwordTF.becomeFirstResponder()
+        case passwordTF:
+            passwordTF.resignFirstResponder()
+        default:
+            passwordTF.resignFirstResponder()
+        }
+        return true
+    }
+}
